@@ -25,9 +25,7 @@ class LargestSum{
           maxSum = Math.max(maxSum, intermediateSum[i-1][j-1]+ triangle[i][j]);
         }
 
-        if(isValidIndex(i-1 , j+1 , i)){
-          maxSum = Math.max(maxSum, intermediateSum[i-1][j+1]+ triangle[i][j]);
-        }
+      
         intermediateSum[i][j] = maxSum;
 
         if(largestSum < maxSum)
